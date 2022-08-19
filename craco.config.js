@@ -20,6 +20,18 @@ module.exports = {
           '@table-header-sort-bg': '#fafafa',
           '@table-body-sort-bg': '#fff',
           '@table-body-selected-sort-bg': '#fff',
+
+
+          '@yellow':'#FDA700',
+          '@red': '#EF4444',
+          '@white':'#FFFFFF',
+          '@blue-main':'#91d5ff',
+          '@black-main-text':'#000000',
+          '@blue-extra':'#A5F3FC',
+          '@gray':'#71717A',
+          '@border-radius-light':'5px',
+          '@border-radius-medium':'10px',
+          '@border-radius-strong':'20px'
         },
       },
     },
