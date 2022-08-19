@@ -1,4 +1,4 @@
-import { Col, Row, Button } from 'antd';
+import { Col, Row, Button, Space } from 'antd';
 import { blue } from '@ant-design/colors';
 import 'antd/dist/antd.css';
 import React, { useState } from 'react';
@@ -21,7 +21,7 @@ type Props = {}
 
 const Header = (props: Props) => {
     console.log(blue);
-
+    const [size, setSize] = useState(12);
     // const [gutterKey, setGutterKey] = useState(1);
     // const [vgutterKey, setVgutterKey] = useState(1);
     // const [colCountKey, setColCountKey] = useState(2);
@@ -41,7 +41,7 @@ const Header = (props: Props) => {
     return (
         <>
             <header className='header'>
-                <Row gutter={[16, 16]}>
+                <Row gutter={[4, 16]}>
                     <Col span={8}>
                         <div className='bl-logo'>
                             <span className="logo">Logo</span>
@@ -59,7 +59,9 @@ const Header = (props: Props) => {
                     <Col span={8}>
                         <div className="btn-login">
                             <Button >
-                                <p>Authenticate</p> <img src="https://res.cloudinary.com/dielvkumg/image/upload/v1660903783/IC_1_rxetca.png" alt="" />
+                                <Space size={size}>
+                                    Authenticate <img src="https://res.cloudinary.com/dielvkumg/image/upload/v1660903783/IC_1_rxetca.png" alt="" />
+                                </Space>
                             </Button>
                         </div>
                     </Col>
