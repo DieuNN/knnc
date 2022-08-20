@@ -3,8 +3,14 @@ import { render } from "react-dom";
 import { createRoot } from "react-dom/client"
 import { BrowserRouter } from "react-router-dom";
 import { knnc_backend } from "../../declarations/knnc_backend";
-import  "./components/GlobalStyle/GlobalStyle.css"
+import "./components/GlobalStyle/GlobalStyle.css"
 import App from './App'
+import { ConfigProvider } from "antd";
+ConfigProvider.config({
+  theme: {
+    primaryColor: "#00B0D7",
+  },
+});
 
 
 const AppRoot = () => {

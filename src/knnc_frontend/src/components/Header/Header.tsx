@@ -20,7 +20,10 @@ type Props = {}
 
 
 const Header = (props: Props) => {
-    console.log(blue);
+    console.log("xyz");
+    
+    console.log("abc")
+
     const [size, setSize] = useState(12);
     // const [gutterKey, setGutterKey] = useState(1);
     // const [vgutterKey, setVgutterKey] = useState(1);
