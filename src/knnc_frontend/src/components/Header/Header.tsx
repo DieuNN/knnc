@@ -1,4 +1,4 @@
-import { Col, Row, Button, Space } from 'antd';
+import { Col, Row, Button, Space,PageHeader } from 'antd';
 import { blue } from '@ant-design/colors';
 import 'antd/dist/antd.css';
 import React, { useState } from 'react';
@@ -40,6 +40,8 @@ const Header = (props: Props) => {
 
     return (
         <>
+            <p>NqDyy^^</p>
+
             <header className='header'>
                 <Row gutter={[4, 16]}>
                     <Col span={8}>
@@ -58,7 +60,7 @@ const Header = (props: Props) => {
                     </Col>
                     <Col span={8}>
                         <div className="btn-login">
-                            <Button >
+                            <Button className="login">
                                 <Space size={size}>
                                     Authenticate <img src="https://res.cloudinary.com/dielvkumg/image/upload/v1660903783/IC_1_rxetca.png" alt="" />
                                 </Space>

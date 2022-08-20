@@ -39,7 +39,7 @@ li a {
     margin: 32px 28px;
     border: var(--bg-blue) 1px solid;
     border-radius: 5px;
-
+    font-weight: bold;
 
 }
 
@@ -55,4 +55,10 @@ li a:hover {
 .btn-login {
     margin: 36px 0px;
 }
+
+.login{
+    border: 1px solid snow;
+    background-color: var(--bg-blue);
+}
+
 
