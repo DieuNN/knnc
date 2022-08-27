@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { Tag, Typography, Image, Row, Col, Popover, Button, Divider } from 'antd';
 import { EyeOutlined, ShoppingCartOutlined, MenuOutlined } from '@ant-design/icons';
-const { Text, Title, Link } = Typography;
+const { Text, Title } = Typography;
 import * as S from './styles'
+import { Link } from 'react-router-dom';
 
 
 const PopOver: React.FC = () => {
@@ -45,30 +46,29 @@ const PopOver: React.FC = () => {
 
 const MarketItem = ({ item }) => {
   return (
-    <div>
+    <Link to={`/market/${item.id}`}>
       <S.ImageWrapper>
-        <Image width={300} height={300} src="https://picsum.photos/400/400"
-        />
+        <Image width={300} height={300} src={item.imageUrl}></Image>
       </S.ImageWrapper>
       <S.RowWrapper justify='space-between'>
         <Col>
-          <Text type="secondary" style={{ textTransform: 'uppercase' }}>asdnkjasndjkbnakj</Text>
+          <Text type="secondary" style={{ textTransform: 'uppercase' }}></Text>
         </Col>
         <Col>
-          <Text strong style={{ color: '#fbc02d' }}>1231231</Text>
+          <Text strong style={{ color: '#fbc02d' }}>{item.price}</Text>
         </Col>
       </S.RowWrapper>
       <S.RowMargin>
         <Row justify='space-between'>
           <Col>
-            <Title level={3}>User 1</Title>
+            <Title level={3}>{item.user}</Title>
           </Col>
           <Col>
             <PopOver />
           </Col>
         </Row>
       </S.RowMargin>
-    </div>
+    </Link>
   )
 }
 
